@@ -34,3 +34,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+FOOTNOTE:
+
+- npm i daisyui prisma @prisma/client next-auth @auth/prisma-adapter prettier eslint-config-prettier prettier-plugin-tailwindcss
+- add extension in vscode: prettier, eslint, prisma
+- npm i zod
+- npx prisma init
+- add and edit your mongodb config
+- change DATABASE_URL in .env to your mongodb server
+- change datasource db to "mongodb" if you user mongodb in folder prisma/schema.prisma
+- npx prisma db pull
+- npx prisma db push
+- npx prisma generate
