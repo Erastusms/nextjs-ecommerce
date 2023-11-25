@@ -5,6 +5,6 @@ interface PriceTagProps {
   className?: string;
 }
 
-export default function PriceTage({ price, className }: PriceTagProps) {
+export default function PriceTag({ price, className }: PriceTagProps) {
   return <span className={`badge ${className}`}>{formatPrice(price)}</span>;
 }
