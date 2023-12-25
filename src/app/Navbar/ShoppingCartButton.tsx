@@ -33,7 +33,7 @@ export default function ShoppingCartButton({ cart }: ShoppingCartButtonProps) {
             />
           </svg>
           <span className="badge indicator-item badge-sm">
-            {cart?.size} || 0
+            {cart?.size || 0}
           </span>
         </div>
       </label>

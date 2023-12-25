@@ -38,6 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 FOOTNOTE:
 
+- npx create-next-app@latest
 - npm i daisyui prisma @prisma/client next-auth @auth/prisma-adapter prettier eslint-config-prettier prettier-plugin-tailwindcss
 - add extension in vscode: prettier, eslint, prisma
 - npm i zod
