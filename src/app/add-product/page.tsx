@@ -15,7 +15,7 @@ async function addProduct(formData: FormData) {
 
   if (!session) {
     redirect("/api/auth/signin?callbackUrl=/add-product");
-  } 
+  }
 
   const name = formData.get("name")?.toString();
   const description = formData.get("description")?.toString();
@@ -26,9 +26,12 @@ async function addProduct(formData: FormData) {
     throw Error("Missing required fields");
   }
 
-  await prisma.product.create({
-    data: { name, description, imageUrl, price },
-  });
+  // cuma ujicoba pagination
+  for (let index = 0; index < 50; index++) {
+    await prisma.product.create({
+      data: { name, description, imageUrl, price },
+    });
+  }
 
   redirect("/");
 }
